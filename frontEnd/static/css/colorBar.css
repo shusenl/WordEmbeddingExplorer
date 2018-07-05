@@ -1,0 +1,19 @@
+.colorbar .axis line{
+    fill: none;
+    stroke: none;
+    shape-rendering: crispEdges;
+}
+
+.colorbar .axis .domain{
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.bar--positive {
+  fill: steelblue;
+}
+
+.bar--negative {
+  fill: darkorange;
+}

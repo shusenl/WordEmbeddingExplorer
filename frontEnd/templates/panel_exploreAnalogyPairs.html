@@ -1,0 +1,225 @@
+<p> </p>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+         <h3 class="panel-title">Analogy Pairs Selection</h3>
+    </div>
+    <div class="panel-body">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    Select Analogy Groups <td>&nbsp;</td>
+                    <a class="btn btn-default" id="btn-clearGroupSelect">Clear Selection</a>
+                </h3>
+            </div>
+
+            <div class="panel-body">
+            <!--div class="container"-->
+            <div id="form-analogyGroup">
+                <fieldset id="analogyGroupCBArray">
+                    <div class="CBcolumns">
+                       <lu id="lu_analogyGroup">
+                    <!-- template generated UI -->
+                       </lu>
+                    </div>
+                </fieldset>
+            </div>
+            <!--/div-->
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <a class="btn btn-default" id="btn-clearHighlight">Clear Highlight Selection</a>
+                    <td>&nbsp;</td> <a class="btn btn-default" id="btn-highlightAll">Select All Current</a>
+                </h3>
+            </div>
+
+            <div class="panel-body" id="panel-analogyPairs">
+                <!-- template generated UI -->
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+         <h3 class="panel-title">Analogy Pairs Projection</h3>
+    </div>
+    <div class="panel-body">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <form class="form-inline" role="form">
+
+                    <a class="btn btn-default" id="btn-ComputeProj">Project Pairs</a>
+
+                    <td>&nbsp;</td>
+
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label> Method </label>
+                        </div>
+                        <div>
+                            <select id="select_projectionMethod">
+                                <option>PCA</option>
+                                <option>LDA</option>
+                                <option>SVM+PCA</option>
+                                <option>SVM+REG</option>
+                                <option>SVMplane</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <td>&nbsp;</td>
+
+
+                    <!--div class="form-group">
+                        <div class="checkbox">
+                            <label>Distance Transparency <input type="checkbox" id="distTransparencyFlag"> </label>
+                            <label> Cosine Filter <input type="checkbox" id="cosineFilterFlag"> </label>
+                            <label> Direction <input type="checkbox" id="filterDirectionFlag"> </label>
+                        </div>
+                        <div class="slider slider-horizontal">
+                            <input type="range" style="width: 170px;" id="baseTranparency" value="20">
+                            <input type="range" style="width: 170px;" id="cosineCutoff" value="20">
+                        </div>
+                    </div-->
+
+                    <td>&nbsp;</td>
+
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>Neighbor Highlight <input type="checkbox" id="neighborHighlightFlag"> </label>
+                        </div>
+                        <div class="slider slider-horizontal">
+                            <input type="range" style="width: 135px;" id="neighborSize" value="20">
+                        </div>
+                    </div>
+
+                    <td>&nbsp;</td>
+
+                    <a class="btn btn-default" id="btn-SubCluster">Cluster</a>
+
+                    <td>&nbsp;</td>
+
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label> Method </label>
+                        </div>
+                        <div>
+                            <select id="select_subClusterMethod">
+                                <option>kMeans++</option>
+                                <option>PairDir</option>
+                                <option>SSC</option>
+                                <option>L2</option>
+                                <option>LRR</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <td>&nbsp;</td>
+
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label> Number </label>
+                        </div>
+                        <div>
+                            <input id = "input_subClusterNum" value="5" type="text" size="2" name="clusterNumber"></input>
+                        </div>
+                    </div>
+
+                </form>
+            <!--/label-->
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body" id="pairProjection">
+                <!-- add d3 scatterplot -->
+            </div>
+            <div id="plotlyDiv"></div>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+         <h3 class="panel-title">Pairwise Analogy Direction Cosine Distance Histogram</h3>
+    </div>
+
+    <div class="panel-body">
+        <!--a class="btn btn-default pull-right" id="btn-ComputeCluster">Compute Projection</a-->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <form class="form-inline" role="form">
+                    <a class="btn btn-default" id="btn-ComputeVecHisto">Compute Histogram</a>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+
+                    <label>Bins Count</label>
+                    <td>&nbsp;</td>
+
+                    <div class="form-group">
+                        <!--div class="checkbox">
+                            <label>Bins</label>
+                        </div-->
+                        <div class="slider slider-horizontal">
+                            <input type="range" style="width: 120px;" id="histoBin" min="2" max="40" value="20">
+                        </div>
+                    </div>
+                </form>
+            <!--/label-->
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body" id="vectorHisto">
+                <!-- add d3 scatterplot -->
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="panel panel-primary" id="axisVis">
+    <div class="panel-heading">
+        <h3 class="panel-title">Semantics Axis Min Max</h3>
+    </div>
+    <div class="panel-body">
+        <!--form class="form-inline" role="form"-->
+            <div class="form-group">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                         type="button" data-toggle="dropdown" id="btn-axis">Axis
+                         <span class="caret"></span>
+                    </button>
+                    <ul id='semanticAxis-axis-selector' class="dropdown-menu">
+                        <li>
+                            <a>Analogy Pair:
+                                <input id = "axis_input" placeholder="man:woman" type="text" size="10"></input>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        <div class="panel-body" id="panel_semanticAxisMinMax">
+                <!-- add d3 scatterplot -->
+        </div>
+
+        <!--/form-->
+    </div>
+
+    <!-- add d3 scatterplot -->
+</div>
+
+<!-- <script src="static/js/ngraph.js"></script> -->
+<!-- <script src="static/js/clusterStatistics.js"></script> -->
+<script src="static/lib/js/pca.js"></script>
+<!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
+<script src="static/lib/js/tsne.js"></script>
+<script src="static/lib/js/numeric-1.2.6.min.js"></script>

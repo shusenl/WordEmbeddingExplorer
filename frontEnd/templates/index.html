@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Word Embedding Visual Explorer </title>
+
+    <link rel="stylesheet" type="text/css" href="static/css/word2Vec.css">
+    <link rel="stylesheet" type="text/css" href="static/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="static/css/colorBar.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/lib/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="static/lib/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- jQuery CSS -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+ </head>
+
+  <body>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#tabs').tab();
+        });
+    </script>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--a class="navbar-brand" href="#">DataExplorerHD</a-->
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Word Embedding Visual Explorer</a></li>
+            <!--li><a href="w2v_proj.html">Projection</a></li-->
+            <!--li><a href="http://www.sci.utah.edu/~shusenl/documents.html">About</a></li-->
+            <li><a href="mailto:%22Shusen%20Liu%22%3cshusenl@sci.utah.edu%3e">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="starter-template">
+        <h2>Word Embedding Visual Explorer</h2>
+
+          <div class="panel panel-primary">
+            <!--div class="panel-heading">
+                 <h3 class="panel-title">Load Analogy Pairs</h3>
+            </div-->
+
+            <div class="panel-body">
+
+                <label> Word Embedding Database </label>
+                <select class="" id="select_wordEmbeddingDatabase">
+                    <option>Glove-300d</option>
+                    <option>word2Vec-300d</option>
+                    <option>word2Vec-300d_normalized</option>
+                    <option>UniformRandom-300d</option>
+                    <option>GaussRandom-300d</option>
+                    <option>Glove-50d</option>
+                </select>
+                <!-- <td>&nbsp;</td> -->
+                <!-- <a class="btn btn-default" id="btn-uploadCSVFile">Load User Database</a> -->
+
+                <div style="margin-top: 10px">
+                 <a class="btn btn-default" id="btn-examplePairData">Load Example Data</a>
+                 <td>&nbsp;</td>
+                 <!-- <a class="btn btn-default" id="btn-pairData">Load Pairs</a> -->
+                 <!-- <td>&nbsp;</td> -->
+                 <label> <input type="checkbox" id="cb_mostFrequentData"> Load 10k Most Frequent </label>
+                </div>
+
+                <input type="file" id="uploadCSVFile" style="visibility: hidden; height: 0px;"/>
+                <input type="file" id="analogyFiles" style="visibility: hidden; height: 0px;"
+                name="files[]" multiple />
+
+                <output id="pair-list">  </output>
+            </div>
+          </div>
+
+          <!-- tabs -->
+          <ul class="nav nav-pills" role="tablist">
+            <!--li role="presentation"><a href="#loadWord" role="tab" data-toggle="tab">Explore Words</a></li-->
+            <!--li role="presentation"><a href="#loadWord" role="tab" data-toggle="tab">t-SNE explainer</a></li-->
+            <li role="presentation" class="active"><a href="#loadWord" role="tab" data-toggle="tab">Explore Global t-SNE</a></li>
+            <li role="presentation"><a href="#loadPair" role="tab" data-toggle="tab">Explore Analogy Relationships</a></li>
+            <!--li role="presentation"><a href="#semanticAxis" role="tab" data-toggle="tab">Explore Semantic Axis</a></li-->
+            <!--li role="presentation" class="active"><a href="#loadPair" role="tab" data-toggle="tab">Explore Analogy Pairs</a></li-->
+            <!--li role="presentation"><a href="#loadTimeVaryingWord" role="tab" data-toggle="tab">Explore Time-Varying Embeddings</a></li-->
+          </ul>
+          <!-- tabs content -->
+          <div class="tab-content">
+              <div role="tabpanel" class="tab-pane fade in active" id="loadWord">
+                 {% include 'panel_tSNEexplainer.html' %}
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="loadPair">
+                 {% include 'panel_exploreAnalogyPairs.html' %}
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="semanticAxis">
+                 {% include 'panel_semanticAxis.html' %}
+              </div>
+              <!--div role="tabpanel" class="tab-pane fade" id="loadTimeVaryingWord">
+                 { include 'word2VecQueryTest/panel_timeVaryingWords.html' }
+              </div-->
+          <div><!-- /.tab-content -->
+      </div>
+    </div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <script src="static/lib/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="static/lib/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="static/lib/js/ie-emulation-modes-warning.js"></script>
+    <!-- Load D3 code -->
+    <script src='http://d3js.org/d3.v3.min.js'></script>
+    <script src='static/lib/js/lasso.min.js'> </script>
+    <!--script src="static/lib/js/cola.min.js"></script-->
+    <script src="static/lib/js/mustache.min.js"></script>
+
+    <script src="static/js/colorBar.js"></script>
+    <!-- My scripts -->
+    <!-- <script type=text/javascript> $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};</script> -->
+
+    <!-- <script src="static/js/graphLayout.js"></script> -->
+    <!-- tSNE tab only -->
+    <script src="static/js/distortion.js"></script>
+    <!-- <script src="static/js/wordNet.js"></script> -->
+    <!-- <script src="static/js/splitWords.js"></script> -->
+
+    <!-- layout for analogy pairs -->
+    <!-- <script src="static/js/analogyDistanceExperiment.js"></script> -->
+    <!-- <script src="static/js/layoutAnalogyPairs.js"></script> -->
+    <!-- explore analogy pair tab only -->
+    <script src="static/js/projAnalogyPairs.js"></script>
+    <!-- explore time varying embeddings tab only -->
+    <!-- <script src="static/js/timeVaryingEmbeddings.js"></script> -->
+    <!-- tSNE explaienr tab only -->
+    <script src="static/js/tSNEexplainer.js"></script>
+    <!-- Semantic Axis tab only -->
+    <script src="static/js/semanticAxis.js"></script>
+    <!-- querying PDF -->
+    <script src="static/js/projErrorPDF.js"></script>
+    <!-- Debug -->
+    <!--script src="http://jsclipper.sourceforge.net/6.1.3.1/clipper.js"></script>
+    <script src="static/js/topoSpines.js"></script-->
+
+
+    <!-- shared files-->
+    <script src="static/js/loadWords.js"></script>
+    <script src="static/js/applyCluster.js"></script>
+
+  </body>
+</html>

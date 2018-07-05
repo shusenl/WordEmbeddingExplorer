@@ -1,0 +1,140 @@
+<p> </p>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+         <h3 class="panel-title">t-SNE Embedding</h3>
+    </div>
+
+    <div class="panel-body">
+        <!--a class="btn btn-default pull-right" id="btn-ComputeCluster">Compute Projection</a-->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <form class="form-inline" role="form">
+
+
+                    <div class="form-group">
+                        <div class="dropdown">
+                          <button class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                            type="button" data-toggle="dropdown">Embed
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a id='btn-ComputetSNE-Server'>Compute on Server</a></li>
+                            <li><a id='btn-ComputetSNE'>Compute in Browser</a></li>
+                            <!--li><a id='btn-ComputetSNE-Reoptimize'>Reoptimize on Browser</a></li>
+                            <li><a id='btn-ComputetSNE-FocusedOptimize'>Focused Optimize on Browser</a></li-->
+                          </ul>
+                        </div>
+                    </div>
+
+                  <td>&nbsp;</td>
+
+
+                    <td>&nbsp;</td>
+
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label> ColorMap </label>
+                        </div>
+                        <div>
+                          <select id="tSNEcolorMapScheme">
+                            <option value="tSNEcost">tSNEcost</option>
+                            <option value="RankingError">RankingError</option>
+                            <!--option value="KDE">KDE</option>
+                            <option value="Outliers">Outliers</option>
+                            <option value="FrequencyRank">FrequencyRank</option>
+                            <option value="Outliers/FreqRank">Outliers/FreqRank</option>
+                            <option value="EmbedComparison">EmbedComparison</option>
+                            <option value="NeighborShape">NeighborShape</option-->
+                            <option value="ClassLabel">ClassLabel</option>
+                            <!--option value="WordNetDist">WordNetDist</option>
+                            <option value="WordNetLabel">WordNetLabel</option-->
+                          </select>
+                        </div>
+                    </div>
+
+                    <td>&nbsp;</td>
+
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label> kNN </label>
+                        </div>
+                        <div>
+                            <input id = "input_tSNEdistortionNeighborSize" value="50" type="value" size="3" name="stepNumber"></input>
+                        </div>
+                    </div>
+
+                    <td>&nbsp;</td>
+
+                    <!--a class="btn btn-default" id="btn-ComputeDistortion">Distortion</a-->
+
+                    <td>&nbsp;</td>
+
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>HD Neighbor <input type="checkbox" id="tSNEHDNeighborFlag"> </label>
+                        </div>
+
+                        <div class="slider slider-horizontal">
+                            <input type="range" style="width: 100px;" id="HDNeighborShown" value="30">
+                        </div>
+                    </div>
+
+                    <td>&nbsp;</td>
+
+                        <div class="checkbox">
+                            <label>ToolTip <input type="checkbox" id="tSNEToolTipFlag" checked> </label>
+                        </div>
+
+                        <div class="checkbox">
+                            <label>ColorBar <input type="checkbox" id="tSNEColorBarFlag" checked> </label>
+                        </div>
+
+                    <td>&nbsp;</td>
+
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label> Word Search </label>
+                        </div>
+                        <div>
+                            <input id = "input_tSNEwordSearch" placeholder="input word" type="text" size="10"></input>
+                        </div>
+                    </div>
+
+                </form>
+            <!--/label-->
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body" id="tSNEembedding">
+                <!-- add d3 scatterplot -->
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" id="tSNEcluster">
+                  <a class="btn btn-default" id="btn-tSNEcluster">Cluster</a>
+                  <td>&nbsp;</td>
+
+                  <label>Method</label>
+                  <select id="tSNE_select_clusterMethod">
+                    <option>Subspace-SSC</option>
+                    <option>Subspace-L2</option>
+                    <option>Subspace-LRR</option>
+                    <option selected="selected">Hierarchy-Ward</option>
+                    <option>Hierarchy-CL</option>
+                    <option>Hierarchy-AL</option>
+                    <option>kMeans++</option>
+                    <option>DBSCAN</option>
+                    <option>Spectral</option>
+                  </select>
+
+                  <td>&nbsp;</td>
+
+                  <label> ClusterNum </label>
+                  <input id = "tSNE_input_clusterNum" value="10" type="text" size="4" name="clusterNumber"></input>
+            </div>
+         </div>
+    </div>
+</div>

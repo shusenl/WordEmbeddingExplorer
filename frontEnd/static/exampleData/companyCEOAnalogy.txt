@@ -1,0 +1,248 @@
+Accenture:Pierre Nanterme
+ACE Limited:Evan G. Greenberg
+Aditya Birla Group:Kumar Birla
+Adobe Systems:Shantanu Narayen
+Agenus:Garo H. Armen
+Alliance Boots:Stefano Pessina
+Alcatel-Lucent:Michel Combes
+Alcoa:Klaus Kleinfeld
+Amazon.com:Jeff Bezos
+AMD:Lisa Su
+American Express:Kenneth Chenault
+American Airlines Group:Doug Parker
+Anthem Inc.:Joseph R. Swedish
+AOL Inc.:Tim Armstrong
+Apple Inc.:Tim Cook
+Arcelor Mittal:Lakshmi Niwas Mittal
+AT&T Inc.:Randall L. Stephenson
+BAE Systems:Ian King
+Banco Bilbao Vizcaya Argentaria:Francisco González
+Bank of America:Brian Moynihan
+Barclays:Antony Jenkins
+Berkshire Hathaway:Warren Buffett
+Best Buy:Hubert Joly
+Bharti Enterprises:Sunil Mittal
+Blackstone Group:Stephen A. Schwarzman
+BHP Billiton:Andrew Mackenzie
+BMW:Norbert Reithofer
+BNY Mellon:Gerald Hassell
+Boeing:Dennis Muilenburg
+Boston Consulting Group:Rich Lesser
+BP:Bob Dudley
+Campbell Soup Company:Denise Morrison
+Canonical Ltd.:Jane Silber
+Capital One Financial:Richard Fairbank
+Caterpillar Inc.:Douglas R. Oberhelman
+Cavium Networks:Syed B. Ali
+CBS Corporation:Leslie Moonves
+Cisco Systems:Chuck Robbins
+Citigroup:Michael Corbat
+The Coca-Cola Company:Muhtar Kent
+Cognizant Technology Solutions:Francisco D'Souza
+Comcast:Brian L. Roberts
+ConAgra:Gary Rodkin
+Credit Suisse:Tidjane Thiam
+Crown Worldwide Group:James E. Thompson
+Daimler AG:Dieter Zetsche
+Dell, Inc.:Michael Dell
+Delta Air Lines, Inc.:Richard H. Anderson
+Deutsche Bank:John Cryan
+Deutsche Post World Net:Frank Appel
+DineEquity:Julia Stewart
+DLF Limited:Kushal Pal Singh
+The Dow Chemical Company:Andrew Liveris
+Dr. Reddy's Laboratories:G. V. Prasad
+Eastman Kodak:Jeff Clarke
+EADS:Tom Enders
+eBay:Devin Wenig
+Electronic Arts:Andrew Wilson
+Ericsson:Hans Vestberg
+Exxon Mobil:Rex Tillerson
+Facebook:Mark Zuckerberg
+FedEx:Frederick W. Smith
+Fiat S.p.A.:Sergio Marchionne
+Fidelity Investments:Abigail Johnson
+Ford Motor Company:Mark Fields
+Foxconn Electronics Inc:Terry Gou
+FUBU:Daymond John
+Formula One Management:Bernie Ecclestone
+General Dynamics:Phebe Novakovic
+General Electric:Jeffrey R. Immelt
+General Motors Corporation:Mary T. Barra
+Gerdau:André Bier Gerdau Johannpeter
+GfK AG:Klaus L. Wübbenhorst
+GlaxoSmithKline:Andrew Witty
+Goldman Sachs:Lloyd Blankfein
+Google:Sundar Pichai
+GMA Network:Felipe Gozon
+GMR Group:Grandhi Mallikarjuna Rao
+GVK
+Haas Outdoors, Inc.:Toxey Haas
+Halliburton:David J. Lesar
+HCL Technologies:Anant Gupta
+Henderson Land Development:Lee Shau Kee
+Hewlett-Packard:Meg Whitman
+Hindalco:Kumar Mangalam Birla
+Home Depot:Frank Blake
+Honeywell:David M. Cote
+HP Hood LLC:John A. Kaneb
+HSBC:Stuart Gulliver
+IBM:Virginia M. Rometty
+IGATE:Ashok Vemuri
+IKEA:Mikael Ohlsson
+Inchcape plc:André Lacroix
+Infosys:Vishal Sikka<ref>{{cite web
+Intel:Brian Krzanich
+InterCall:Scott Etzler
+ITC Limited:Sushma Rajgopalan
+J.Crew:Millard Drexler
+Jefferies & Company:Richard B. Handler
+JP Morgan Chase:James Dimon
+Juniper Networks:Kevin Johnson
+Kaplan, Inc.:Andrew Rosen
+Kingdom Holding Company:Al-Waleed bin Talal
+Koch Industries Inc.:Charles G. Koch
+Land Securities:Robert Noel
+Lanco Infratech:Madhusudhan Rao Lagadapati
+Las Vegas Sands:Sheldon Adelson
+Lehman Brothers:Richard S.
+L.L. Bean:Christopher McCormick
+Larsen & Toubro Limited:A M Naik
+Lockheed Martin:Marillyn Hewson
+Macy's, Inc.:Terry J. Lundgren
+Manchester United F.C.:David Gill
+Marks and Spencer:Stuart Rose
+McDonald's:Steve Easterbrook
+McKinsey & Company:Dominic Barton
+Mercedes-Benz:Dieter Zetsche
+Merrill Lynch:John Thain
+Mesa Air Group:Jonathan Ornstein
+MetLife:Steven A. Kandarian
+MGA Entertainment:Isaac Larian
+Microsoft:Satya Nadella
+Mile High Comics:Chuck Rozanski
+Mindtree:Krishnakumar Natarajan
+Morgan Stanley:James P. Gorman
+Motorola:Greg Brown
+Mozilla:Mitchell Baker
+MySQL AB:Marten Mickos
+MySpace:Chris DeWolfe
+Nation Media Group:Wilfred Kiboro
+National Amusements:Sumner Redstone
+NBCUniversal:Steve Burke
+Newlog:Yochanan Vollach
+News Corporation:Rupert Murdoch
+New York Times Company:Janet L. Robinson
+NIIT:Vijay K. Thadani
+Nike, Inc.:Mark Parker
+Nissan:Carlos Ghosn
+Nokia:Rajeev Suri
+Nortel:Mike S. Zafirovski
+Novartis:Daniel Vasella
+Nintendo:Tatsumi Kimishima
+Office Depot:Steve Odland
+Oxford Sustainable Group:Hadley Barrett
+Oracle Corporation:Larry Ellison
+Orascom Telecom:Naguib Sawiris
+Outback Steakhouse:Chris T. Sullivan
+PepsiCo:Indra Nooyi
+Pfizer:Henry McKinnell
+Pizza Hut:David C. Novak
+Playboy Enterprises:Scott Flanders
+Polo Ralph Lauren:Ralph Lauren
+Popular, Inc.:Richard Carrión
+Procter & Gamble:David S. Taylor
+Prudential Financial, Inc.:John Strangfeld
+Qantas:Alan Joyce
+Qwest:Richard Notebaert
+Reliance Anil Dhirubhai Ambani Group:Anil Ambani
+Reliance Industries Limited:Mukesh Ambani
+Renault:Carlos Ghosn
+Rite Aid Corporation:Mary Sammons
+Rocawear:Jay-Z
+Royal Ahold N.V.:John Rishton
+Royal Bank of Canada:Gordon Nixon
+Royal Bank of Scotland:Ross McEwan
+Royal Dutch Shell:Ben van Beurden
+Ryanair:Michael O'Leary
+S. C. Johnson & Son:Herbert Fisk Johnson III
+Saab Automobile:Jan-Åke Jonsson
+SandRidge Energy:Tom L. Ward
+Samsung:Oh-Hyun Kwon
+SAP AG:Bill McDermott
+SAS Institute:James Goodnight
+Sbarro:James J. Greco
+Scottrade:Rodger O. Riney
+Seagate Technology:Steve Luczo
+Siemens A.G.:Peter Löscher
+Simon Property Group:David Simon
+SingTel:Chua Sock Koong
+Sirius Satellite Radio:Mel Karmazin
+Sleep Country Canada:Stephen K. Gunn
+SoftBank:Masayoshi Son
+Solera Holdings:Tony Aquila
+Southwest Airlines:Gary C. Kelly
+Sonic Drive-In:J. Clifford Hudson
+Sony:Kazuo Hirai
+Sony Computer Entertainment:Andrew House
+Starbucks Coffee Company:Howard Schultz
+Statoil:Helge Lund
+Sun Hung Kai Properties:Walter Kwok
+Sun Microsystems:Jonathan I. Schwartz
+Sun Pharmaceutical:Dilip Shanghvi
+SunTrust Banks Inc.:James M. Wells, III
+Supervalu Inc.:Jeff Noddle
+Sulekha:Satya Prabhakar
+Swedbank:Jan Lidén
+Syntel Inc.:Bharat Desai
+Target Corporation:Gregg Steinhafel
+Tata Consultancy Services:N Chandrasekaran
+Tata Steel:B Muthuraman
+Telefónica:César Alierta
+Telmex:Carlos Slim Helú
+Telstra:David Thodey
+Temasek Holdings:Ho Ching
+Tesco:Philip Clarke
+Tim Hortons:Paul D. House
+Time Warner:Jeffrey L. Bewkes
+Tod's:Diego Della Valle
+TJX Companies, Inc.:Carol Meyrowitz
+Tracinda:Kirk Kerkorian
+The Siegel Group:Steve Siegel
+The Travelers Companies:Jay S. Fishman
+Trump Organization:Donald Trump
+Toyota:Hiroshi Okuda
+Toys for Bob:Paul Reiche III
+Toys "R" Us:Gerald L. Storch
+Tradeking:Donato A. Montanaro
+Turner Broadcasting System, Inc.:Philip I. Kent
+Twitter:Jack Dorsey
+UAL Corporation:Glenn F. Tilton
+UBS AG:Sergio Ermotti
+U.S. Century Bank:Octavio Hernández
+United Parcel Service:D. Scott Davis
+UGI Corp.:Lon R. Greenberg
+United States Steel Corp.:John P. Surma
+Valeant Pharmaceuticals:J. Michael Pearson
+Valero Energy Corporation:William R. Klesse
+Verizon Communications:Lowell McAdam
+Viacom:Philippe Dauman
+Viking Range:Fred Carl, Jr.
+Vodafone:Vittorio Colao
+Volkswagen:Matthias Müller
+Vulcan Inc.:Paul Allen
+The Walt Disney Company:Robert Iger
+Walgreen Company:Gregory Wasson
+Wal-Mart:Mike Duke
+Warner Bros.:Barry Meyer
+Washington Mutual:Kerry Killinger
+The Washington Post Company:Donald E. Graham
+Wells Fargo:John Stumpf
+Whole Foods Market:John Mackey
+Williams-Sonoma:Laura J. Alber
+Windstream Corporation:Jeffery Gardner
+Winn-Dixie:Peter Lynch
+Wipro:Abidali Neemuchwala
+World Wrestling Entertainment:Vince McMahon
+Yahoo!:Marissa Mayer
+YG Entertainment:Yang Hyun Suk

@@ -1,0 +1,73 @@
+.node {
+  stroke: #fff;
+  stroke-width: 3.0px;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: .8;
+}
+
+#tooltip{
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color:black;
+  z-index: 100;
+}
+
+/*Multi-colume*/
+/*CSS3 multiple columns.*/
+/* Get em size for colums: 184/16 */   
+.CBcolumns
+{   
+    -moz-column-width: 12em; /* Firefox */
+    -webkit-column-width: 12em; /* webkit, Safari, Chrome */
+    column-width: 12em;
+    margin-left: 10;
+    padding: 10;
+}
+/*remove standard list and bullet formatting from ul*/
+.CBcolumns lu
+{
+   margin: 0px;
+   padding: 0px;
+   list-style-type: none;
+}
+/*fix the checkbox cut off*/
+.CBcolumns li
+{
+   margin-left: 20px;
+}
+
+/* correct webkit/chrome uneven margin on the first column*/
+.CBcolumns lu li:first-child
+{
+   margin-top:0px;
+}
+/*fix the bold case in label in bootstrap*/
+/*http://stackoverflow.com/questions/20127591/how-to-remove-bold-from-f-label*/
+label {
+    font-weight: normal !important;
+}
+
+/*tree layout*/
+.nodeTree {
+  cursor: pointer;
+}
+
+.nodeTree circle {
+  fill: #fff;
+  stroke: black;
+  stroke-width: 2.0px;
+}
+
+.nodeTree text {
+  font: 15px sans-serif;
+}
+
+.linkTree {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 3.5px;
+}

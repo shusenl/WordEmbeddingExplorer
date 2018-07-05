@@ -1,0 +1,83 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+
+.bar rect {
+  fill: steelblue;
+  shape-rendering: crispEdges;
+}
+
+.bar text {
+  fill: #fff;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.legend rect {
+  fill:white;
+  stroke:black;
+  opacity:0.8;}
+
+/* lasso */
+.dot {
+  stroke: #000;
+}
+
+.lasso path {
+  stroke: rgb(80,80,80);
+  stroke-width:2px;
+}
+
+.lasso .drawn {
+  fill-opacity:.05 ;
+}
+
+.lasso .loop_close {
+  fill:none;
+  stroke-dasharray: 4,4;
+}
+
+.lasso .origin {
+  fill:#3399FF;
+  fill-opacity:.5;
+}
+
+.not_selected {
+  opacity:.2;
+}
